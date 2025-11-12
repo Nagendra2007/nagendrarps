@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="heading" ><h1>ROCK--PAPER--SCISSOR</h1></div>
+    </header>
+    <div class="gamebox">
+        <div class="rock box" id="rock"><i class="fa-solid fa-hand-back-fist" id="icon"></i></div>
+        <div class="paper box" id="paper"><i class="fa-solid fa-hand" id="icon"></i></div>
+        <div class="scissor box" id="scissor"><i class="fa-solid fa-hand-scissors" id="icon"></i></div>
+    </div>
+     <div class="scoreboard">
+    <table>
+    <tr>
+    <td colspan="2"><h2>SOCORE BOARD</h2></td>
+    </tr>
+    <tr>
+   <td><h3>YOUR'S__SCORE</h3></td> 
+    <td><h3>COMPUTER'S__SCORE</h3></td>
+    </tr>
+    <tr>
+     <td ><h2 class="users_score">0</h2></td>
+     <td ><h2 class="computer_score">0</h2></td>  
+    </tr>
+    </table>
+    </div>
+    <div class="currentchoice">
+             <div class="refresh-box" onclick="location.reload()" style="cursor:pointer"><i id="refresh" class="fa-solid fa-repeat"></i></div>
+             <div class="choicebox">
+                <p id="msg">START-GAME</p>
+             </div>
+    </div>
+    <div class="about"><p>-Built By Nagendra</p></div>
+    <script  src="script.js"></script>
+    </body>
+</html>

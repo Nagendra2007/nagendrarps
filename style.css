@@ -1,0 +1,93 @@
+h1{
+    font-family : 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color : blueviolet;
+    text-align: center;
+}
+.gamebox{
+    display : flex;
+    justify-content : space-around;
+    height  : 200px; 
+}
+.box{
+    height : 100%;
+    width : 30% ; 
+    background: rgba(0, 150, 255, 0.2); /* transparent blue */
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 12px;
+    backdrop-filter: blur(8px); /* glassy blur effect */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    display : flex;
+    justify-content: center;
+    align-items : center;
+}
+#icon{
+    font-size: 6rem;
+    color : #D1A075
+}
+#icon:hover,#icon:active{
+    font-size : 5rem;
+    color : #8D5524;
+}
+.box:hover ,.box:active {
+    border : 2px solid rgb(102, 199, 241,0.5)
+}
+h2{
+    font-family : Arial, Helvetica, sans-serif;
+    color : rgba(28, 176, 255, 0.759);
+    text-align: center;
+}
+h3{
+    font-family : Arial, Helvetica, sans-serif;
+    color : rgba(17, 96, 139, 0.759);
+    text-align: center;
+    width : 100%;
+
+}
+table {
+ border-collapse : separate;
+ border-spacing: 20px 0px ;
+}
+.scoreboard{
+    display : flex;
+    justify-content: center;
+}
+.currentchoice{
+    display: flex;
+    justify-content: center;
+    margin-top : 4rem;
+}
+.choicebox{
+    width : 80%;
+    background-color: black;
+    border-radius: 30px;
+    color : white;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+}
+.about{
+    display : inline-block;
+    font-family: arial;
+    justify-content: flex-end;
+    color : white;
+    background-color:rgba(52, 152, 219, 0.9) ;
+    margin-top : 10px;
+    border-radius:15px ;
+    padding-left: 5px;
+    padding-right : 5px;
+    position : relative;
+    left : 70%;
+}
+#refresh{
+    font-size: 30px;
+    color : white;
+}
+.refresh-box{
+    background-color : rgba(52, 152, 219, 0.9);
+    display : inline-block ;
+    padding : 5px;
+    border-radius : 10px;
+    margin-right : 25px;
+    display: flex;
+    align-items : center;
+}
