@@ -90,4 +90,8 @@ table {
     margin-right : 25px;
     display: flex;
     align-items : center;
+
+}
+body{
+    overflow-x : hidden;
 }
