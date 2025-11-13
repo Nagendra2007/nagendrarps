@@ -77,4 +77,29 @@ choices.forEach((choices)=>{
         const userChoice = choices.getAttribute("id");
         gamePlay(userChoice);
     })
+
+});
+document.addEventListener('keydown', function (e) {
+    if (e.ctrlKey && 
+        (e.key === '+' || e.key === '-' || e.key === '=' || e.key === '0')) {
+        e.preventDefault();
+    }
+});
+
+// Disable CTRL + scroll zoom
+document.addEventListener('wheel', function (e) {
+    if (e.ctrlKey) {
+        e.preventDefault();
+    }
+}, { passive: false });
+
+// Disable Trackpad pinch zoom (Mac/Windows)
+document.addEventListener('gesturestart', function (e) {
+    e.preventDefault();
+});
+document.addEventListener('gesturechange', function (e) {
+    e.preventDefault();
+});
+document.addEventListener('gestureend', function (e) {
+    e.preventDefault();
 });
